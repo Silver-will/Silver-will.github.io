@@ -1,7 +1,7 @@
 ---
 title: 'Solve indirect'
 description: A Global illumination testing framework implementing several modern dynamic GI techniques PixelPerfect Art Gallery is an innovative online platform that transcends traditional art exhibition spaces.
-publishDate: 'Oct 25 2023'
+publishDate: 'Oct 24 2021'
 isFeatured: true
 seo:
   image:
@@ -9,6 +9,8 @@ seo:
 ---
 
 ![Project preview](/project-5.jpg)
+
+
 
 **Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 

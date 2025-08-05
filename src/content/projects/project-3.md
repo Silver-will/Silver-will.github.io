@@ -1,7 +1,7 @@
 ---
 title: 'A-Ray'
 description: RoboChef Recipe Assistant is a groundbreaking mobile application that leverages artificial intelligence to redefine the cooking experience.
-publishDate: 'Oct 12 2023'
+publishDate: 'Oct 12 2021'
 isFeatured: true
 seo:
   image:

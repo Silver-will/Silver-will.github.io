@@ -1,7 +1,7 @@
 ---
 title: 'Black key.'
 description: Black key is a rendering engine written in vulkan with the goal of building out a modern and modular framework for my experiments in realtime rendering and computer graphics.
-publishDate: 'Sep 01 2024'
+publishDate: 'Aug 05 2025'
 image: 'sponza.jpg'
 seo:
   image:
