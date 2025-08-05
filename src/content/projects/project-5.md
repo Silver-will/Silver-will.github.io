@@ -1,6 +1,6 @@
 ---
-title: 'PixelPerfect Art Gallery'
-description: PixelPerfect Art Gallery is an innovative online platform that transcends traditional art exhibition spaces.
+title: 'Solve indirect'
+description: A Global illumination testing framework implementing several modern dynamic GI techniques PixelPerfect Art Gallery is an innovative online platform that transcends traditional art exhibition spaces.
 publishDate: 'Oct 25 2023'
 isFeatured: true
 seo:

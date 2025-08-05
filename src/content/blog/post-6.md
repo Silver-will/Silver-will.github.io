@@ -1,10 +1,10 @@
 ---
-title: 'The Evolution of Front-End Development: A Journey Through Time'
+title: 'Vulkan barriers and synchronisation'
 excerpt: Choosing the right framework for your web project is a critical decision that can significantly impact the development process and the success of your project. With so many options available, it's essential to consider various factors before making a choice.
 publishDate: 'October 9 2023'
 tags:
-  - Web
-  - Guide
+  - Vulkan
+  - Graphics programming
 seo:
   image:
     src: '/post-6.jpg'

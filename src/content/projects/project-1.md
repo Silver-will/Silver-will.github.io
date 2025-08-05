@@ -1,16 +1,16 @@
 ---
-title: 'EcoBuddy: Sustainable Living App'
-description: EcoBuddy is a mobile app that gamifies sustainable living. Users can set eco-friendly goals, track their carbon footprint, and earn virtual rewards for adopting environmentally conscious habits.
-publishDate: 'Jan 02 2024'
+title: 'Black key.'
+description: Black key is a rendering engine written in vulkan with the goal of building out a modern and modular framework for my experiments in realtime rendering and computer graphics.
+publishDate: 'Sep 01 2024'
+image: 'sponza.jpg'
 seo:
   image:
-    src: '/project-1.jpg'
+    src: '/sponza.png'
     alt: Project preview
 ---
 
-![Project preview](/project-1.jpg)
+![Project preview](/sponza.png)
 
-**Note:** This case study is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
 
 **Project Overview:**
 EcoBuddy is a revolutionary mobile application designed to make sustainable living accessible, engaging, and rewarding. With a focus on gamification and real-world impact, EcoBuddy encourages users to adopt eco-friendly habits, reduce their carbon footprint, and contribute to a healthier planet.

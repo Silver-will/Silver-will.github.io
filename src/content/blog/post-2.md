@@ -1,10 +1,9 @@
 ---
-title: Building an Impressive Front-End Developer Portfolio
+title: Optimizing lighting cost with the help of clustered forward shading
 excerpt: In the competitive world of front-end development, a strong portfolio is your ticket to showcasing your skills, making a lasting impression on potential employers or clients, and advancing your career.
-publishDate: 'October 5 2023'
+publishDate: 'Aug 10 2025'
 tags:
-  - Web
-  - Web development
+  - Graphics programming
 seo:
   image:
     src: '/post-2.jpg'

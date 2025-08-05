@@ -1,10 +1,10 @@
 ---
-title: 'Essential Security Measures Every Web Developer Should Know'
+title: 'Finding sanity in linking third party dependencies via cmake'
 excerpt: 'Create a post on essential security practices for web developers. Cover topics such as secure coding, HTTPS implementation, and protection against common web vulnerabilities.'
-publishDate: 'October 8 2023'
+publishDate: 'July 30 2024'
 tags:
-  - Security
-  - Web
+  - Programming
+  - C++
 seo:
   image:
     src: '/post-5.jpg'

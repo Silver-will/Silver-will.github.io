@@ -1,11 +1,10 @@
 ---
-title: 'Ensuring Cross-Browser Compatibility for a Seamless User Experience'
+title: 'Hydraulic erosion for terrain on the GPU'
 excerpt: A website that functions flawlessly across different browsers not only enhances user satisfaction but also broadens its reach.
-publishDate: 'October 7 2023'
+publishDate: 'December 7 2024'
 tags:
-  - Web
-  - UX
-  - Web development
+  - Graphics programming
+  - GPUGPU
 seo:
   image:
     src: '/post-4.jpg'
