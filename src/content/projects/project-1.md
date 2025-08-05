@@ -13,9 +13,11 @@ seo:
 
 
 **Project Overview:**
-EcoBuddy is a revolutionary mobile application designed to make sustainable living accessible, engaging, and rewarding. With a focus on gamification and real-world impact, EcoBuddy encourages users to adopt eco-friendly habits, reduce their carbon footprint, and contribute to a healthier planet.
+A 3D rendering engine written in vulkan, utlisiing modern features such as Dynamic rendering and vertex pulling with an entirely GPU Driven pipeline and bindless resources to maximize performance and much more.
+This post will serve as a frame analysis Describing everything that happens in a single frame in my renderer and some of the logical reasoning behind the architectural decisions i've taken.
 
-## Objectives
+## Table of Contents
+
 
 1. Develop a user-friendly mobile app that motivates individuals to adopt sustainable practices in their daily lives.
 2. Utilize gamification elements to make sustainable living fun and interactive.
