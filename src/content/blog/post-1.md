@@ -13,7 +13,7 @@ seo:
 
 ![A person standing at the window](/renderdoc.png)
 
-In recent years, the way rendering engines schedule and create work has evolved, gone are the days of culling, sorting and generating draw commands on the CPU while the GPU waits for work. Nowadays with the advent of the Draw indirect API and compute shaders, we can just perform all our mesh culling work on the GPU via a compute shader dispatch, feed our output into a buffer and use that buffer as an argument to our call we work has undergone a significant transformation, largely due to advancements in technology and changing attitudes toward work-life balance. One of the most notable changes has been the rise of remote work, allowing employees to work from the comfort of their own homes. While this shift has brought about many benefits, it has also introduced its fair share of challenges. Let's explore the advantages and disadvantages of working from home.
+In recent years, the way rendering engines schedule and create work has evolved, gone are the days of culling, sorting and generating draw commands on the CPU while the GPU waits for work. Nowadays with the advent of the Draw indirect API and compute shaders, we can just perform all our mesh culling work on the GPU via a compute shader dispatch, feed our output into a buffer and use that buffer as an argument to our vkCmdDrawIndirect call.
 
 ## Reasons And Advantages For this 
 
