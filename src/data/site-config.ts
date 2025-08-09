@@ -42,10 +42,10 @@ const siteConfig: SiteConfig = {
     website: 'https://silver-will.github.io',
     title: 'Daunte Omoregie',
     subtitle: 'Graphics programmer and game engine developer',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'Small page for my Graphics programming adventures',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/portfolio.png',
+        alt: 'Small page for my Graphics programming adventures'
     },
     headerNavLinks: [
         {
@@ -90,7 +90,7 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            href: 'https://twitter.com/silver_will_'
         }
     ],
     hero: {
@@ -105,7 +105,7 @@ const siteConfig: SiteConfig = {
         ]
     },
     subscribe: {
-        title: 'Subscribe to Dante Newsletter',
+        title: 'Subscribe to my Newsletter',
         text: 'One update per week. All the latest posts directly in your inbox.',
         formUrl: '#'
     },

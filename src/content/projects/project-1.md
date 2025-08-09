@@ -13,8 +13,8 @@ seo:
 
 
 **Project Overview:**
-A 3D rendering engine written in vulkan, utlisiing modern features such as Dynamic rendering and vertex pulling with an entirely GPU Driven pipeline and bindless resources to maximize performance and much more.
-This post will serve as a frame analysis Describing everything that happens in a single frame in my renderer and some of the logical reasoning behind the architectural decisions i've taken.
+A 3D rendering engine written in vulkan, utliziing modern features such as Dynamic rendering and vertex pulling with an entirely GPU Driven pipeline and bindless resources to maximize performance and much more.
+This post will serve as a frame analysis describing anatomy of a rendered frame in black key and some of the logical reasoning behind the architectural decisions i've taken.
 
 ## Table of Contents
 0. [Engine Architecture](#engine-architecture)

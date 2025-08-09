@@ -1,6 +1,6 @@
 ---
 title: 'Hydraulic erosion for terrain on the GPU'
-excerpt: A website that functions flawlessly across different browsers not only enhances user satisfaction but also broadens its reach.
+excerpt: Simulating the effect of rainfall eroding the world in my procedural terrain tool. Mostly an excuse to play around with compute shaders
 publishDate: 'December 7 2024'
 tags:
   - Graphics programming

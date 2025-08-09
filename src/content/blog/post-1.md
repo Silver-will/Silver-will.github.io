@@ -1,22 +1,21 @@
 ---
 title: GPU driven rendering and bindless resources. A modern approach to generating draw commands.
-excerpt: In recent years, the way we work has undergone a significant transformation, largely due to advancements in technology and changing attitudes toward work-life balance. One of the most notable changes has been the rise of remote work, allowing employees to work from the comfort of their own homes.
+excerpt: Blog post detailing my engine wide refactor earlier this year with the purpose of switching to a completely GPU Driven approach to rendering meshes and some of my musings on bindless engine design
 publishDate: 'Aug 7 2025'
 tags:
   - Graphics programming
+  - Vulkan
 seo:
   image:
     src: '/post-1.jpg'
     alt: A person standing at the window
 ---
 
-![A person standing at the window](/post-1.jpg)
+![A person standing at the window](/renderdoc.png)
 
-**Note:** This post was created using Chat GPT to demonstrate the features of the _[Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/)_.
+In recent years, the way rendering engines schedule and create work has evolved, gone are the days of culling, sorting and generating draw commands on the CPU while the GPU waits for work. Nowadays with the advent of the Draw indirect API and compute shaders, we can just perform all our mesh culling work on the GPU via a compute shader dispatch, feed our output into a buffer and use that buffer as an argument to our call we work has undergone a significant transformation, largely due to advancements in technology and changing attitudes toward work-life balance. One of the most notable changes has been the rise of remote work, allowing employees to work from the comfort of their own homes. While this shift has brought about many benefits, it has also introduced its fair share of challenges. Let's explore the advantages and disadvantages of working from home.
 
-In recent years, the way we work has undergone a significant transformation, largely due to advancements in technology and changing attitudes toward work-life balance. One of the most notable changes has been the rise of remote work, allowing employees to work from the comfort of their own homes. While this shift has brought about many benefits, it has also introduced its fair share of challenges. Let's explore the advantages and disadvantages of working from home.
-
-## Advantages of Working from Home
+## Reasons And Advantages For this 
 
 1. **Flexibility:** One of the most significant advantages of remote work is the flexibility it offers. Employees can often set their own hours, which can be particularly beneficial for those with family responsibilities or other commitments.
 
@@ -30,7 +29,7 @@ In recent years, the way we work has undergone a significant transformation, lar
 
 > Your ability to discipline yourself to set clear goals and then work toward them every day will do more to guarantee your success than any other single factor.
 
-## Disadvantages of Working from Home
+## Implementation Details
 
 1. **Isolation:** Remote work can be lonely. The absence of coworkers and face-to-face interaction can lead to feelings of isolation and loneliness, which may negatively impact mental health.
 
