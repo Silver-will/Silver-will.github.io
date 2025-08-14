@@ -10,6 +10,7 @@ seo:
 ---
 
 ![Project preview](/sponza.png)
+[Rendering Engine Source Code](https://github.com/Silver-will/Black_Key)
 
 
 **Project Overview:**
@@ -32,7 +33,7 @@ This post will serve as a frame analysis describing anatomy of a rendered frame 
 8. [Forward Pass](#forward-pass)
     - [Bindless material Indexing](#material-indexing)
     - [PBR + IBL](#pbr-and-ibl)
-    - [light cluster indexing](#clustered-shading)
+    - [Clustered Shading](#clustered-shading)
 8. [Draw-Sky-Box](#draw-sky-box)
 9. [Depth-Reduction](#depth-reduce)
 10. [Draw Post process](#draw-post-process)
@@ -109,3 +110,45 @@ this->assets_path = GetAssetPath();
 ```
 
 # Asset Loading and Mesh merging
+The engine currently only supports 3d models of the gltf2.0 file type and uses fastgltf on the backend for quick loading.
+Immediately after all our meshes are loaded in, we then begin preparation for GPU driven rendering by merging all our vertex and index buffers into singular large buffers. This is done to accomodate the usage of **VkCmdDrawIndexedIndirect** which expects a buffer this also has the advantage of allowing us to bind vertex and index buffers only once! For geometry with similar material properties at least(PBR materials, phong materials or objects with just diffuse).
+
+The mesh merging is handles by our **SceneManager** within 2 for loop that looks something like:
+
+```
+for (auto& m : renderables)
+{
+	m.firstIndex = static_cast<uint32_t>(total_indices);
+	m.firstVertex = static_cast<uint32_t>(total_vertices);
+
+	total_vertices += m.vertexCount;
+	total_indices += m.indexCount;
+	if (mesh_buffer == m.meshBuffer)
+	{
+		last_mesh_vert_size += m.vertexCount;
+		last_mesh_indice_size += m.indexCount;
+
+		m.meshBuffer->mesh_info.mesh_vert_count = last_mesh_vert_size;
+		m.meshBuffer->mesh_info.mesh_indice_count = last_mesh_indice_size;
+	}
+}
+
+for (auto& m : renderables)
+{			
+	VkBufferCopy vertex_copy;
+	vertex_copy.dstOffset = sizeof(Vertex) * m.firstVertex;
+	vertex_copy.size = sizeof(Vertex) * m.vertexCount;
+	vertex_copy.srcOffset = 0;
+	vkCmdCopyBuffer(cmd, m.vertexBuffer, merged_vertex_buffer.buffer, 1, &vertex_copy);
+		
+		
+	VkBufferCopy index_copy;
+	index_copy.dstOffset = sizeof(uint32_t) * m.firstIndex;
+	index_copy.size = sizeof(uint32_t) * m.indexCount;
+	index_copy.srcOffset = 0;
+	vkCmdCopyBuffer(cmd, m.indexBuffer, merged_index_buffer.buffer, 1, &index_copy);
+}
+
+```
+
+# Pre Process Passes
