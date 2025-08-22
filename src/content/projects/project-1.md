@@ -152,3 +152,7 @@ for (auto& m : renderables)
 ```
 
 # Pre Process Passes
+Before we even start rendering the frame we dispatch a few compute shaders and regular to compute some offline work.
+
+The first of these is our IBL pre-computations including the usual Prefilter, irradiance map and brdf Lut texture generation, there are currently 2 implemenations of this process. The first using compute shaders dispatch and the second with the traditional graphics pipeline and a full screen quad.
+Not really much to compare here since both are offline computations.
