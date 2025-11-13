@@ -1,5 +1,5 @@
 ---
-title: 'Procedurally generated terrain'
+title: 'GPU simulated hydraulic erosion and Procedurally generated terrain'
 description: A project centered around using fractal brownian motion and hydraulic erosion to help simulate realistic terrain. Originally built on the forge and then ported to opengl.
 publishDate: 'Oct 19 2023'
 seo:
